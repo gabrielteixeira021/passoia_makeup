@@ -1,10 +1,9 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import CategorySection from './components/CategorySection';
-import VirtualTryOn from './components/VirtualTryOn';
-import ProductGrid from './components/ProductGrid';
+import Home from './components/Home';
+import ProductDetail from './components/ProductDetail';
 import Footer from './components/Footer';
 
 function App() {
@@ -12,10 +11,10 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Hero />
-        <CategorySection />
-        <VirtualTryOn />
-        <ProductGrid />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/produto/:id" element={<ProductDetail />} />
+        </Routes>
       </main>
       <Footer />
     </div>

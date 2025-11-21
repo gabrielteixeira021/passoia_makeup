@@ -1,13 +1,25 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ProductCard.css';
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    navigate(`/produto/${product.id}`);
+  };
+
   return (
     <div className="product-card">
       <div className="product-image-wrapper">
         <img src={product.image} alt={product.name} className="product-image" />
         <div className="product-overlay">
-          <button className="btn btn-primary btn-quick-view">Ver Detalhes</button>
+          <button 
+            className="btn btn-primary btn-quick-view"
+            onClick={handleViewDetails}
+          >
+            Ver Detalhes
+          </button>
         </div>
       </div>
       
