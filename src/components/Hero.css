@@ -119,13 +119,13 @@
 
 .badge-text strong {
   font-weight: var(--font-bold);
-  color: var(--color-text-primary);
+  color: rgb(31, 30, 30);
   font-size: var(--text-base);
 }
 
 .badge-text span {
   font-size: var(--text-sm);
-  color: var(--color-text-secondary);
+  color: rgb(163, 161, 161);
 }
 
 /* Responsive */

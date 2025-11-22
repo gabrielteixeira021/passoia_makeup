@@ -174,7 +174,7 @@
   align-items: center;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
-  background: var(--color-surface);
+  background: var(--color-text-primary);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-lg);
   cursor: pointer;
@@ -183,7 +183,7 @@
 
 .color-option:hover {
   border-color: var(--color-primary-light);
-  background: var(--color-background-alt);
+  background: var(--color-text-primary);
 }
 
 .color-option.selected {
@@ -202,7 +202,7 @@
 
 .color-name {
   font-weight: var(--font-medium);
-  color: var(--color-text-primary);
+  color: var(--color-white);
 }
 
 /* Add to Cart Button */

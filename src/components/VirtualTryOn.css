@@ -84,13 +84,13 @@
 
 .product-name {
   font-weight: var(--font-bold);
-  color: var(--color-text-primary);
+  color: black;
   font-size: var(--text-base);
 }
 
 .color-name {
+  color: black;
   font-size: var(--text-sm);
-  color: var(--color-text-secondary);
 }
 
 /* Controls */
@@ -123,6 +123,7 @@
   cursor: pointer;
   transition: all var(--transition-base);
   text-align: left;
+  color: hwb(210 83% 16% / 0.756);
 }
 
 .product-option:hover {
